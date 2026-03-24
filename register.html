@@ -1,27 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
     <title>Register</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
 
-<h2>Registration Page</h2>
+<body class="bg-light d-flex justify-content-center align-items-center vh-100">
 
-<form>
-    <label>Name:</label><br>
-    <input type="text"><br><br>
+    <!-- Main Container -->
+    <div class="container">
 
-    <label>Email:</label><br>
-    <input type="email"><br><br>
+        <!-- Registration Card -->
+        <div class="card shadow p-4 mx-auto" style="max-width: 400px;">
 
-    <label>Password:</label><br>
-    <input type="password"><br><br>
+            <!-- Page Heading -->
+            <h2 class="text-center mb-3">Create Account</h2>
 
-    <a href="login.html">Register</a>
-</form>
+            <!-- Registration Form -->
+            <form>
 
-<br>
-<a href="login.html">Already have an account? Login</a>
+                <!-- Name Input -->
+                <div class="mb-3">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" placeholder="Enter your name">
+                </div>
+
+                <!-- Email Input -->
+                <div class="mb-3">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control" placeholder="Enter your email">
+                </div>
+
+                <!-- Password Input -->
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" placeholder="Create password">
+                </div>
+
+                <!-- Register Button -->
+                <a href="login.html" class="btn btn-success w-100">Register</a>
+
+            </form>
+
+            <!-- Login Redirect -->
+            <div class="text-center mt-3">
+                <a href="login.html">Already have an account? Login</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
